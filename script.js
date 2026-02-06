@@ -75,3 +75,38 @@ toggleBtn.addEventListener("click", () => {
 });
 
 
+const words = [
+    "Abhijeet Kant Kumar",
+    "a Developer",
+    "a Designer"
+  ];
+
+  let i = 0;
+  let j = 0;
+  let currentWord = "";
+  let isDeleting = false;
+
+  function typeEffect() {
+    const textElement = document.getElementById("text");
+    currentWord = words[i];
+
+    if (!isDeleting) {
+      textElement.textContent = currentWord.slice(0, j++);
+    } else {
+      textElement.textContent = currentWord.slice(0, j--);
+    }
+
+    if (j === currentWord.length + 1) {
+      isDeleting = true;
+      setTimeout(() => {}, 800);
+    }
+
+    if (j === 0 && isDeleting) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 80 : 150);
+  }
+
+  typeEffect();

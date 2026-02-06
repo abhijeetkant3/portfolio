@@ -16,32 +16,34 @@
   </head>
   <body>
     <nav class="navbar">
-      
-
       <div class="logo">
         <h1>ABHI</h1>
       </div>
 
       <!-- Nav Links -->
-   <div class="nav-container" id="navMenu">
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</div>
+      <div class="nav-container" id="navMenu">
+        <button id="themeToggle" class="theme-toggle">🌙</button>
 
-     <!-- Hamburger Icon -->
+        <a href="#homepage">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Hamburger Icon -->
       <img src="./hmbg.png" alt="ham" id="hamburger" />
     </nav>
-
-    <div id="spacer">
+    
+    <span id="homepage"></span>
+    <div id="home">
       <div class="intro-brief">
+        <span id="about"></span>
         <img src="./po.png" alt="" />
       </div>
 
-      <div class="intro">
-        <h1>Abhijeet kant kumar</h1>
+      <div class="intro" id="">
+        <h1>Abhijeet Kant Kumar</h1>
+
         <p>
           I am a recent Computer Science B.E. graduate And a passionate
           developer with hands-on experience in web and software development.
@@ -56,80 +58,75 @@
       </div>
     </div>
 
-  <div class="proj" id="projects">
-  <h1 class="header">PROJECTS</h1>
+    <div class="proj" id="projects">
+      <h1 class="header">PROJECTS</h1>
 
-  <div class="project">
-    <div class="project-container1">
-      <a href="#">SKILL-BOOK</a>
-      <img src="./skillbook.png" alt="" />
+      <div class="project">
+        <div class="project-container1">
+          <a href="#">SKILL-BOOK</a>
+          <img src="./skillbook.png" alt="" />
+        </div>
+
+        <div class="project-container2">
+          <a href="#">WEB-MOTION</a>
+          <img src="./web.png" alt="" />
+        </div>
+
+        <div class="project-container3">
+          <a href="#">LIFTX</a>
+          <img src="./liftx.png" alt="" />
+        </div>
+
+        <div class="project-container4" >
+          <a href="https://fittrack-pearl.vercel.app">FITTRACK</a>
+          <img src="./fittrack.png" alt="" />
+        </div>
+      </div>
     </div>
-
-    <div class="project-container2">
-      <a href="#">WEB-MOTION</a>
-      <img src="./web.png" alt="" />
-    </div>
-
-    <div class="project-container3">
-      <a href="#">LIFTX</a>
-      <img src="./liftx.png" alt="" />
-    </div>
-
-    <div class="project-container4">
-      <a href="#">FITTRACK</a>
-      <img src="./fittrack.png" alt="" />
-    </div>
-  </div>
-</div>
-
 
     <!-- form -->
 
-   <div class="form" id="contact">
-  <div class="info">
-    <h1>CONTACT FORM</h1>
+    <div class="form" id="contact">
+      <div class="info">
+        <h1>CONTACT FORM</h1>
 
-    <form id="contact-form">
-      <label>Name:</label>
-      <input type="text" name="name" required>
+        <form id="contact-form">
+          <label>Name:</label>
+          <input type="text" name="name" required />
 
-      <label>E-mail:</label>
-      <input type="email" name="email" required>
+          <label>E-mail:</label>
+          <input type="email" name="email" required />
 
-      <label>Message:</label>
-      <textarea name="message" rows="4" required></textarea>
+          <label>Message:</label>
+          <textarea name="message" rows="4" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-
-
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer class="footer">
       <p>© 2026 Abhijeet. All rights reserved.</p>
 
       <div class="social-links">
-        <a href="https://facebook.com" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
+        <a href="https://github.com/abhijeetkant3" target="_blank">
+          <i class="fa-brands fa-github"></i>
         </a>
 
-        <a href="https://linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/abhijeetkant/" target="_blank">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
-
+<!-- 
         <a href="https://instagram.com" target="_blank">
           <i class="fa-brands fa-instagram"></i>
-        </a>
+        </a> -->
 
-        <a href="https://twitter.com" target="_blank">
+        <a href="https://x.com/AbhijeetKa14938" target="_blank">
           <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
     </footer>
-
-
 
     <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
@@ -139,8 +136,7 @@
 
     <!-- <script src="script.js"></script> -->
     <!-- contactjs -->
-     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-     <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
